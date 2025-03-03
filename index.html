@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Main-contianer -->
+    <div class="container">
+      <input
+        type="text"
+        class="input"
+        id="input"
+        placeholder="Enter city name"/>
+      <button class="btn"><i class="fa-brands fa-searchengin"></i></button>
+
+      <!-- Child-contianer -->
+
+      <div class="mini-container">
+
+         <div class="weather-icon-container">
+          <img src="" alt="icon" class="icon">
+          <h3 class="description"></h3>
+        </div>
+        
+
+        <div class="wrap">
+          <div class="left-side">
+            <div class="city-country">
+            <h3 class="city-name">Mumbai <i class="fa-solid fa-location-dot"></i></h3>
+            <h3 class="country"></h3>
+      </div>
+       <h3 class="degree">15°C</h3>
+         <h3 class="humid">Humidity</h3>
+        </div>
+
+
+        <div class="right-side">
+              <h3 class="wind">Wind</h3>
+              <h3 class="time-zone">TimeZone</h3>
+            </div>
+        </div>
+        
+        
+         <!-- default layout -->
+        <div class="default-layout">
+            <img src="photos/search-city-map_487717-1198.avif" alt="no-search" class="image">
+            <h3 class="para">Find Out Weather of your City</h3>
+        </div> 
+
+        <div class="loader"></div>
+        
+      </div>
+
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

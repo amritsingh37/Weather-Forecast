@@ -1,0 +1,316 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-image: url(photos/marek-szturc-4CDdd1RCt6w-unsplash.jpg);
+    /* background-image: url(photos/pexels-njeromin-14530325.jpg); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.input {
+    margin-top: 10px;
+    margin-left: 30px;
+    height: 25px;
+    width: 60%;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 5%;
+}
+
+.btn {
+    margin: 8px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-weight: bold;
+    height: 25px;
+    width: 20%;
+    border: 2px solid white;
+    border-radius: 20%;
+}
+
+.container {
+    margin-top: 100px;
+    margin-left: 525px;
+    height: 500px;
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.default-layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.mini-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 438px;
+    width: 300px;
+    margin-top: 20px;
+}
+
+
+
+.container:hover .mini-container {
+    visibility: visible;
+    opacity: 1;
+}
+
+.default-layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    height: 175px;
+    width: 175px;
+    margin-top: -175px;
+}
+
+.para {
+    color: white;
+    margin-top: 15px;
+}
+
+
+.weather-icon-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    height: 100px;
+    width: 100px;
+    display: none;
+}
+
+.description {
+    width: 100px;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    display: none;
+}
+
+.city-country {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.city-name {
+    padding-top: 20px;
+    margin-left: 15px;
+    color: black;
+    font-size: 20px;
+    display: none;
+}
+
+.country {
+    margin-top: -22px;
+    margin-left: 115px;
+    color: black;
+    display: none;
+}
+
+.wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.left-side{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.right-side{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.degree {
+    margin-top: 35px;
+    margin-left: 15px;
+    color: black;
+    font-size: 15px;
+    display: none;
+}
+
+.humid {
+    margin-top: 4px;
+    margin-top: 15px;
+    margin-left: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    color: black;
+    font-size: 15px;
+    display: none;
+}
+
+.wind {
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+    display: none;
+}
+
+.time-zone {
+    margin-top: 25px;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    display: none;
+}
+
+.not-found {
+    height: 100%;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    text-align: center;
+}
+
+/* Responsive Design */
+
+/* Tablets and Medium Screens */
+@media (max-width: 1024px) {
+    .container {
+        width: 80%;
+        height: auto;
+        padding: 20px;
+        margin: 50px auto;
+        border-radius: 15px;
+    }
+
+    .input {
+        width: 75%;
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .btn {
+        width: 50px;
+        height: 40px;
+    }
+
+    .wrap {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+/* Mobile Phones */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        height: auto;
+        padding: 15px;
+        text-align: center;
+        border-radius: 15px;
+    }
+
+    .input {
+        width: 85%;
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .btn {
+        width: 45px;
+        height: 40px;
+    }
+
+    .wrap {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .city-name,
+    .degree,
+    .humid,
+    .wind,
+    .time-zone {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .image {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+/* Small Phones (Portrait Mode) */
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+        padding: 10px;
+        height: auto;
+        text-align: center;
+        border-radius: 15px;
+    }
+
+    .input {
+        width: 80%;
+        height: 30px;
+        font-size: 14px;
+    }
+
+    .btn {
+        width: 40px;
+        height: 30px;
+    }
+
+    .image {
+        width: 100px;
+        height: 100px;
+    }
+
+    .wrap {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .city-name,
+    .degree,
+    .humid,
+    .wind,
+    .time-zone {
+        font-size: 14px;
+    }
+}
